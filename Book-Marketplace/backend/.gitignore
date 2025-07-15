@@ -1,0 +1,10 @@
+# backend/.gitignore
+
+# Dependencies
+/node_modules
+
+# Environment Variables
+.env
+
+# Firebase Service Account Key
+/config/firebase-service-account.json
