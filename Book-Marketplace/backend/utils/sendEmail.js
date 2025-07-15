@@ -1,7 +1,7 @@
 //E:\pro-book-marketplace\backend\utils\sendEmail.js
 import sgMail from '@sendgrid/mail';
 
-sgMail.setApiKey("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");
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export const sendNewMessageEmail = async ({ to, fromName, bookTitle, chatLink }) => {
   const msg = {
